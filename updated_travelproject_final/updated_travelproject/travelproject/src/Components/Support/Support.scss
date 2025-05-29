@@ -1,0 +1,140 @@
+// components/Support/Support.css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+:root {
+    --primaryColor: hsl(14, 90%, 53%);
+    --primaryColorLight: hsl(14, 96%, 91%);
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+}
+
+.support {
+    padding-top: 120px;
+    padding-bottom: 5rem;
+}
+
+.support-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid */
+    gap: 2rem;
+}
+
+.support-category {
+    border: 1px solid #ddd;
+    /* Light border */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.2s;
+    /* Smooth transform on hover */
+    background-color: #fff;
+    /* White background for cards */
+}
+
+.support-category:hover {
+    transform: translateY(-5px);
+    /* Move up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Darker shadow on hover */
+}
+
+.support-category h3 {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    /* Use flexbox for icon positioning */
+    justify-content: space-between;
+    /* Align items to start and end */
+    align-items: center;
+    color: #333;
+}
+
+.support-category span {
+    /* Style for the plus/minus icon */
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: transform 0.2s;
+    /* Smooth rotation */
+}
+
+.support-category h3:hover span {
+    transform: rotate(90deg);
+    /* Rotate on hover */
+}
+
+
+.support-questions {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.support-questions li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.support-questions h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.support-questions p {
+    color: #666;
+}
+
+.support-contact {
+    margin-top: 3rem;
+    text-align: center;
+    /* Center the contact info */
+}
+
+.support-contact h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.support-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.support-contact li {
+    margin-bottom: 0.5rem;
+}
+
+.support-contact a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+.support-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+    .support-categories {
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
+    }
+}

@@ -1,0 +1,126 @@
+// components/Travel/Travel.css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+:root {
+    --primaryColor: hsl(14, 90%, 53%);
+    --primaryColorLight: hsl(14, 96%, 91%);
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+}
+
+.travel {
+    padding: 120px;
+    /* Adjust padding as needed */
+    background-color: #f8f9fa;
+    /* Example background color */
+}
+
+.travel-content {
+    display: flex;
+    flex-direction: column;
+    /* Stack on smaller screens */
+    align-items: center;
+    /* Center horizontally */
+    gap: 2rem;
+    /* Space between text and image/video */
+    padding: 2rem;
+}
+
+.travel-text {
+    text-align: center;
+    /* Center text within the text area */
+    max-width: 600px;
+    /* Limit text width for readability */
+    margin-bottom: 2rem;
+    /* Space below the text */
+
+    h2 {
+        font-size: 2rem;
+        /* Adjust heading size */
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .btn {
+        /* Style your button as needed */
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        background-color: var(--primaryColor);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 1rem;
+    }
+
+    .btn:hover {
+        background-color: var(--primaryColorLight);
+        color: var(--primaryColor);
+    }
+}
+
+.travel-image {
+    /* Styles for the image or video container */
+    width: 100%;
+    /* Make it responsive */
+    max-width: 800px;
+    /* Set a maximum width */
+    overflow: hidden;
+    /* Hide overflowing content */
+    border-radius: 8px;
+    /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+
+    img,
+    video {
+        width: 100%;
+        height: auto;
+        display: block;
+        /* Prevent extra space below image/video */
+    }
+
+    video {
+        object-fit: cover;
+        /* Ensure video covers the entire container */
+    }
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .travel-content {
+        flex-direction: row;
+        /* Arrange side by side on larger screens */
+        justify-content: space-between;
+        /* Distribute space between them */
+        align-items: flex-start;
+        /* Align to the top */
+    }
+
+    .travel-text {
+        text-align: left;
+        /* Align text to the left */
+        margin-bottom: 0;
+        /* Remove bottom margin */
+    }
+}

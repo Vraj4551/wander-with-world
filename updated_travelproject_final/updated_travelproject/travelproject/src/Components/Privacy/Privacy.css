@@ -1,0 +1,67 @@
+/* Privacy.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.privacy-section {
+  padding: 120px;
+  /* Adjust as needed */
+  background-color: #f8f8f8;
+  /* Example background color */
+}
+
+.privacy-section .container {
+  max-width: 800px;
+  /* Adjust container width */
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.privacy-section h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.privacy-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.privacy-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Add more styling as needed *//*# sourceMappingURL=Privacy.css.map */

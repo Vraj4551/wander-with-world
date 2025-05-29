@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2? family=Montserrat:wght@200;400;500; 700;900&display=swap');
+
+
+root{
+    --primaryColor: hsl(14, 90%, 53%);
+    --primaryColorLight: hsl(14, 96%, 91%);
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 3rem; 
+}
+
+.review{
+    .secContainer{
+        .textDiv{
+            .red Text{
+                font-size: var(--sma11FontSize);
+                display: block;
+                color: var(--primaryC010r);
+                font-weight: 700;
+            }
+
+            h3{
+                font-size: var(--h2FontSize);
+                color: var(--b1ackColor);
+                padding: 1rem 0;
+            }
+
+            p{
+            color: var(--b1ackColor);
+            }
+            .stars {
+                gap: .4rem;
+                padding: Irem e;
+                .icon{
+                    color: var(--primaryColor);
+                    font-size: var(--h3FontSize);
+                }
+            }
+
+            .clientsImages {
+                gap: 1rem;
+                img {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid rgb(255, 255, 255);
+                    box-shadow: 0 0 2px 2px rgb(251, 212, 194);
+                }
+            }
+        }
+
+        .imgDiv{
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+            object-fit: cover;
+            }
+        }    
+    }
+}
+
+// Media queries{
+@media screen and (min-width:480px) {
+    .review{
+        .secContainer{
+            .textDiv{
+                .redText{
+                    font-size: var(--normalFontSize);
+                }
+
+                h3{
+                    font-size: 20px;
+                    color: var(--blackColor);
+                }
+                p{
+                    color: var(--blackColor);
+                    font-size: var(--normalFontSize);
+                }
+
+                .stars{
+                    .icon{
+                        font-size: var(--h2FontSize);
+                    }
+                }
+
+                .clientslmages{
+                    img{
+                    height: 50px;
+                    width: 50px;
+                    }
+                }
+            }
+
+            .imgDiv{
+                height: 250px;
+                width: 100%;
+                img{
+                height: 100%;
+                width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:740px) {
+    .review{
+        .secContainer{
+            grid-template-columns: repeat(2,1fr);
+
+            .textDiv{
+                .redText{
+                    font-size:var(--normalFontSize);
+                }
+
+                h3{
+                    font-size: 20px;
+                    color: var(--normalFontSize);
+                }
+
+                p{
+                    color: var(--blackColor);
+                    font-size: Var(--normalFontSize);
+                }
+
+                .stars{
+                    .icon{
+                        font-size: var(--h2FontSize);
+                    }
+                }
+
+                .clientsImages{
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .review{
+        .secContainer{
+            gap: 3rem;
+            
+            .textDiv{
+                .redText{
+                    font-size: var(--h3FontSize);
+                }
+
+                h3{
+                    font-size: var(--h1FontSize);
+                    color: var(--b1ackColor);
+                }
+
+                p{
+                color: var(--b1ackC010r);
+                font-size: var(--h3FontSize);
+                line-height: 2rem;
+                }
+            }
+
+            .imgDiv{
+                height: 300px;
+            }
+        }    
+    }
+}
+

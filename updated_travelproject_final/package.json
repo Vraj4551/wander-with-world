@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@react-oauth/google": "^0.12.1",
+    "axios": "^1.8.1",
+    "jwt-decode": "^4.0.0",
+    "mysql2": "^3.12.0",
+    "react-modal": "^3.16.3",
+    "react-router-dom": "^7.2.0",
+    "sequelize": "^6.37.6"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.85.1"
+  }
+}

@@ -1,0 +1,261 @@
+/* Root Variables */
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.destination .section {
+  padding: 2rem 0;
+}
+.destination .secContainer {
+  padding: 2rem;
+  border-radius: var(--borderRadius);
+  background: var(--cardColor);
+}
+.destination .secContainer .secTitle {
+  margin-bottom: 2rem;
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+}
+.destination .secContainer .secTitle .redText {
+  color: var(--primaryColor);
+  font-size: var(--smallFontSize);
+  font-weight: 500;
+}
+.destination .secContainer .secTitle h3 {
+  font-size: var(--h1FontSize);
+}
+.destination .secContainer .secTitle p {
+  font-size: var(--normalFontSize);
+  color: var(--greyText);
+}
+.destination .secContainer .searchField {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.destination .secContainer .searchField .inputField {
+  background: var(--primaryColorLight);
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+}
+.destination .secContainer .searchField .inputField input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: var(--normalFontSize);
+}
+.destination .secContainer .searchField .inputField .icon {
+  color: var(--blackColor);
+  font-size: 1.2rem;
+  margin-right: 0.5rem; /* Add some space between icon and text */
+}
+.destination .secContainer .searchField .btn {
+  /* REMOVE grid-column: 1 / -1; */
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  font-size: var(--normalFontSize);
+  border: none;
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.destination .secContainer .searchField .btn:hover {
+  background: var(--primaryColorLight);
+}
+.destination .secContainer .secMenu {
+  display: flex;
+  justify-content: flex-start; /* Align menu items to the left */
+  align-items: center;
+  margin-bottom: 2rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent items from wrapping */
+  padding-bottom: 1rem;
+}
+.destination .secContainer .secMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.destination .secContainer .secMenu ul li {
+  padding: 0.5rem 1rem;
+  border-radius: var(--borderRadius);
+  font-size: var(--normalFontSize);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  color: var(--blackColor);
+}
+.destination .secContainer .secMenu ul li.active {
+  background: var(--primaryColorLight);
+  color: var(--primaryColor);
+}
+.destination .secContainer .secMenu ul li:hover {
+  background: var(--primaryColorLight);
+  color: var(--primaryColor);
+}
+.destination .secContainer .destinationContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.destination .secContainer .destinationContainer .singleDestination {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 260px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.destination .secContainer .destinationContainer .singleDestination:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.destination .secContainer .destinationContainer .singleDestination .imgDiv {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Ensure image doesn't overflow on hover scale */
+}
+.destination .secContainer .destinationContainer .singleDestination .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.destination .secContainer .destinationContainer .singleDestination .imgDiv .destinationInfo {
+  position: absolute;
+  bottom: 3rem; /* Set to the very bottom */
+  left: 1rem;
+  width: calc(100% - 2rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: var(--borderRadius);
+  color: var(--whiteColor);
+  z-index: 100;
+}
+.destination .secContainer .destinationContainer .singleDestination .descInfo {
+  position: absolute;
+  bottom: -0.5rem; /* Set to the very bottom */
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--whiteColor);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align to the left */
+  justify-content: flex-end; /* Align items to the bottom */
+}
+.destination .secContainer .destinationContainer .singleDestination .descInfo .destinationName {
+  font-size: var(--h2FontSize);
+  font-weight: 600;
+}
+.destination .secContainer .destinationContainer .singleDestination .descInfo .locationName {
+  margin-bottom: 0rem; /* Small space between destination and location */
+  font-size: var(--normalFontSize);
+  color: var(--greyText);
+}
+.destination .secContainer .destinationContainer .singleDestination .descInfo .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0rem; /* Add a small space between name and location */
+}
+.destination .secContainer .destinationContainer .singleDestination .descInfo .icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments (Example) */
+@media screen and (min-width: 520px) {
+  .destination .secContainer .searchField {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .destination .secContainer .destinationContainer {
+    grid-template-columns: repeat(2, 1f);
+  }
+}
+@media screen and (min-width: 1014px) {
+  .destination .secContainer .secTit1e .redText {
+    font-size: var(--normalFontSize);
+  }
+  .destination .secContainer .secTit1e h3 {
+    font-size: var(--h1FontSize);
+  }
+  .destination .secContainer .secTit1e p {
+    font-size: var(--h3FontSize);
+  }
+  .destination .secContainer .secMenu .flex {
+    justify-content: left;
+    /* Removed the background property as it was incomplete */
+  }
+  .destination .secContainer .secMenu .flex li {
+    background: transparent;
+    padding: 10px 17px;
+    border-radius: var(--borderRadius);
+    color: var(--blackColor);
+    border: 1.5px dashed transparent;
+    cursor: pointer;
+  }
+  .destination .secContainer .secMenu .flex li:hover {
+    color: var(--primaryColor);
+    border: 1.5px dashed var(--primaryColor);
+  }
+  .destination .secContainer .secMenu .flex .active {
+    color: var(--primaryColor);
+    border: 1.5px dashed var(--primaryColor);
+  }
+  .destination .secContainer .searchField {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1148px) {
+  .destination .secContainer .secTit1e h3 {
+    font-size: var(--h1FontSize);
+  }
+  .destination .secContainer .secTit1e p {
+    font-size: var(--h2FontSize);
+  }
+  .destination .secContainer .destinationContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .destination .secContainer .destinationContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=Destinations.css.map */

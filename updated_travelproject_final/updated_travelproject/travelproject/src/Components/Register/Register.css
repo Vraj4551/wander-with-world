@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  /* Fqnt ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+body {
+  background: white;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.wrapper .videoBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.wrapper .videoBg video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: rgba(var(--whiteColor), 0.1);
+  border: 2px solid rgba(var(--whiteColor), 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(var(--blackColor), 0.2);
+  border-radius: 10px;
+  padding: 40px;
+}
+.wrapper form h1 {
+  font-size: var(--h1FontSize);
+  color: var(--whiteColor);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wrapper form .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+.wrapper form .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(var(--whiteColor), 0.2);
+  border-radius: 40px;
+  font-size: var(--normalFontSize);
+  color: var(--whiteColor);
+  padding: 20px 45px 20px 20px;
+}
+.wrapper form .input-box input::-moz-placeholder {
+  color: var(--whiteColor);
+}
+.wrapper form .input-box input::placeholder {
+  color: var(--whiteColor);
+}
+.wrapper form .input-box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--h3FontSize);
+  color: var(--whiteColor);
+}
+.wrapper form button {
+  width: 100%;
+  height: 45px;
+  background: var(--whiteColor);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(var(--blackColor), 0.1);
+  cursor: pointer;
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  font-weight: 600;
+  margin-top: 20px;
+}
+.wrapper form .login-link {
+  font-size: var(--smallFontSize);
+  color: var(--whiteColor);
+  text-align: center;
+  margin-top: 20px;
+}
+.wrapper form .login-link p a {
+  color: var(--whiteColor);
+  text-decoration: none;
+  font-weight: 600;
+}
+.wrapper form .login-link p a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=Register.css.map */

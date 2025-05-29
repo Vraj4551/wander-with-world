@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.conditions {
+  padding-top: 120px;
+  padding-bottom: 5rem;
+}
+
+.conditions-content {
+  /* Add styles for the content area */
+  font-size: 1rem;
+  /* or your preferred font size */
+  line-height: 1.6;
+  /* Good for readability */
+  color: #333;
+  /* Darkish gray for text */
+}
+
+.conditions-content h3 {
+  font-size: 1.4rem;
+  /* Slightly larger heading */
+  margin-top: 1.5rem;
+  /* Space above headings */
+  margin-bottom: 0.5rem;
+  color: #000;
+  /* Black for headings */
+}
+
+.conditions-content p {
+  margin-bottom: 1rem;
+}
+
+.conditions-content ul {
+  list-style-type: disc;
+  /* Bullet points */
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.conditions-content a {
+  color: var(--primaryColor);
+  /* Link color */
+  text-decoration: none;
+}
+
+.conditions-content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .conditions-content {
+    font-size: 0.9rem;
+  }
+  .conditions-content h3 {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=Conditions.css.map */
